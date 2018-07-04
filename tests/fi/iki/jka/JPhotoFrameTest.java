@@ -1,13 +1,51 @@
 package fi.iki.jka;
 
+
 import org.junit.Test;
 
-import static org.hamcrest.CoreMatchers.equalTo;
-import static org.junit.Assert.assertThat;
+import java.awt.event.ActionEvent;
+
+import static org.junit.Assert.assertTrue;
+
 
 public class JPhotoFrameTest {
     @Test
-    public void placeholder() throws Exception {
-        assertThat(2, equalTo(2));
+    public void showSlideshowWhenPhotoIsAvailable() throws Exception {
+        JPhotoCollection collection = new JPhotoCollection();
+        final boolean[] hasSlideshowBeenShown = new boolean[]{false};
+        collection.add(0, new JPhoto());
+        JPhotoFrame frame = new JPhotoFrame(null, collection) {
+            @Override
+            public void showSlideshow() {
+                hasSlideshowBeenShown[0] = true;
+            }
+        };
+
+        frame.actionPerformed(new ActionEvent("", 0, JPhotoMenu.A_SLIDESHOW));
+
+        assertTrue(hasSlideshowBeenShown[0]);
     }
-}
+
+    @Test
+    public void displayErrorWhenInvalidPhoto() throws Exception {
+        JPhotoCollection collection = new JPhotoCollection() {
+            @Override
+            public boolean load(String filename) {
+                return true;
+            }
+        };
+        final boolean[] errorMessageShown = new boolean[]{false};
+
+        JPhotoFrame frame = new JPhotoFrame("ddd", collection) {
+            @Override
+            public void showSlideShowErrorMessage() {
+                errorMessageShown[0] = true;
+            }
+        };
+
+        frame.actionPerformed(new ActionEvent("", 0, JPhotoMenu.A_SLIDESHOW));
+
+        assertTrue(errorMessageShown[0]);
+    }
+
+    }
