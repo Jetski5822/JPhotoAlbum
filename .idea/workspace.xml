@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0de10f86-07f3-4661-a19a-0e1a5d9c3691" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fi/iki/jka/JPhotoCollection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fi/iki/jka/JPhotoCollection.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/fi/iki/jka/JPhotoFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fi/iki/jka/JPhotoFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fi/iki/jka/JPhotoMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fi/iki/jka/JPhotoMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/fi/iki/jka/JPhotoFrameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/fi/iki/jka/JPhotoFrameTest.java" afterDir="false" />
     </list>
     <ignored path="JPhotoAlbum.iws" />
@@ -66,7 +67,7 @@
             <entry file="file://$PROJECT_DIR$/src/fi/iki/jka/JPhotoFrame.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="269">
-                  <caret line="583" selection-start-line="583" selection-end-line="583" />
+                  <caret line="582" selection-start-line="582" selection-end-line="582" />
                 </state>
               </provider>
             </entry>
@@ -96,17 +97,30 @@
           <file leaf-file-name="JPhotoFrameTest.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/tests/fi/iki/jka/JPhotoFrameTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="345">
-                  <caret line="23" column="46" selection-end-line="51" />
+                <state relative-caret-position="285">
+                  <caret line="19" column="63" selection-start-line="19" selection-start-column="63" selection-end-line="19" selection-end-column="63" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="e#667#668#0" expanded="true" />
                     <element signature="e#727#728#0" expanded="true" />
+                    <element signature="e#1136#1137#0" expanded="true" />
+                    <element signature="e#1199#1200#0" expanded="true" />
+                    <element signature="e#1723#1724#0" expanded="true" />
+                    <element signature="e#1778#1779#0" expanded="true" />
                     <element signature="e#862#1011#0" expanded="true" />
                     <element signature="e#1010#1011#0" expanded="true" />
                     <element signature="e#1043#1044#0" expanded="true" />
                     <element signature="e#1102#1103#0" expanded="true" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="JPhotoMenu.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/fi/iki/jka/JPhotoMenu.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="283">
+                  <caret line="57" column="25" selection-start-line="57" selection-start-column="25" selection-end-line="57" selection-end-column="25" />
                 </state>
               </provider>
             </entry>
@@ -145,11 +159,20 @@
           <file leaf-file-name="JPhotoFrame.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/fi/iki/jka/JPhotoFrame.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="476">
-                  <caret line="129" column="59" lean-forward="true" selection-end-line="1084" />
+                <state relative-caret-position="365">
+                  <caret line="630" column="8" lean-forward="true" selection-start-line="630" selection-start-column="8" selection-end-line="630" selection-end-column="8" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="JPhotoCollection.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/fi/iki/jka/JPhotoCollection.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="331">
+                  <caret line="335" column="18" selection-start-line="335" selection-start-column="18" selection-end-line="335" selection-end-column="18" />
                 </state>
               </provider>
             </entry>
@@ -174,6 +197,8 @@
       <find>VK_S</find>
       <find>A_SLIDESHOW</find>
       <find>could not</find>
+      <find>size</find>
+      <find>A_SLID</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -182,8 +207,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/fi/iki/jka/JPhotoFrame.java" />
+        <option value="$PROJECT_DIR$/src/fi/iki/jka/JPhotoMenu.java" />
+        <option value="$PROJECT_DIR$/src/fi/iki/jka/JPhotoCollection.java" />
         <option value="$PROJECT_DIR$/tests/fi/iki/jka/JPhotoFrameTest.java" />
+        <option value="$PROJECT_DIR$/src/fi/iki/jka/JPhotoFrame.java" />
       </list>
     </option>
   </component>
@@ -266,20 +293,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.JPhotoFrameTest.displayErrorWhenInvalidPhoto">
+  <component name="RunManager" selected="JUnit.JPhotoFrameTest">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-    </configuration>
-    <configuration name="JPhotoFrame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="fi.iki.jka.JPhotoFrame" />
-      <module name="JPhotoAlbum" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="fi.iki.jka.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -320,6 +336,52 @@
       <option name="PACKAGE_NAME" value="fi.iki.jka" />
       <option name="MAIN_CLASS_NAME" value="fi.iki.jka.JPhotoFrameTest" />
       <option name="METHOD_NAME" value="displayErrorWhenInvalidPhoto" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="JPhotoFrameTest.showFasterSlideshow" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JPhotoAlbum" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fi.iki.jka.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="fi.iki.jka" />
+      <option name="MAIN_CLASS_NAME" value="fi.iki.jka.JPhotoFrameTest" />
+      <option name="METHOD_NAME" value="showFasterSlideshow" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="JPhotoFrameTest.showNormalSlideshow" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JPhotoAlbum" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fi.iki.jka.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="fi.iki.jka" />
+      <option name="MAIN_CLASS_NAME" value="fi.iki.jka.JPhotoFrameTest" />
+      <option name="METHOD_NAME" value="showNormalSlideshow" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
       <option name="PARAMETERS" />
@@ -375,16 +437,18 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.JPhotoFrameTest" />
-      <item itemvalue="Application.JPhotoFrame" />
       <item itemvalue="JUnit.JPhotoFrameTest.showSlideshowWhenPhotoIsAvailable" />
       <item itemvalue="JUnit.JPhotoFrameTest.displayErrorWhenInvalidPhoto" />
+      <item itemvalue="JUnit.JPhotoFrameTest.showFasterSlideshow" />
+      <item itemvalue="JUnit.JPhotoFrameTest.showNormalSlideshow" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.JPhotoFrameTest" />
+        <item itemvalue="JUnit.JPhotoFrameTest.showNormalSlideshow" />
+        <item itemvalue="JUnit.JPhotoFrameTest.showFasterSlideshow" />
         <item itemvalue="JUnit.JPhotoFrameTest.displayErrorWhenInvalidPhoto" />
         <item itemvalue="JUnit.JPhotoFrameTest.showSlideshowWhenPhotoIsAvailable" />
-        <item itemvalue="JUnit.JPhotoFrameTest" />
-        <item itemvalue="Application.JPhotoFrame" />
       </list>
     </recent_temporary>
   </component>
@@ -402,39 +466,40 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="JPhotoFrameTest - 2018.07.04 at 10h 41m 17s.xml">
-      <configuration name="JPhotoFrameTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="JPhotoFrameTest - 2018.07.04 at 10h 42m 43s.xml">
-      <configuration name="JPhotoFrameTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="JPhotoFrameTest - 2018.07.04 at 10h 44m 16s.xml">
-      <configuration name="JPhotoFrameTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="JPhotoFrameTest_displayErrorWhenInvalidPhoto - 2018.07.04 at 10h 54m 07s.xml">
-      <configuration name="JPhotoFrameTest.displayErrorWhenInvalidPhoto" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="JPhotoFrameTest_displayErrorWhenInvalidPhoto - 2018.07.04 at 10h 54m 26s.xml">
-      <configuration name="JPhotoFrameTest.displayErrorWhenInvalidPhoto" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="JPhotoFrameTest_showSlideshowWhenPhotoIsAvailable - 2018.07.04 at 10h 54m 41s.xml">
-      <configuration name="JPhotoFrameTest.showSlideshowWhenPhotoIsAvailable" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="JPhotoFrameTest_displayErrorWhenInvalidPhoto - 2018.07.04 at 10h 55m 51s.xml">
-      <configuration name="JPhotoFrameTest.displayErrorWhenInvalidPhoto" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="JPhotoFrameTest_displayErrorWhenInvalidPhoto - 2018.07.04 at 10h 57m 44s.xml">
-      <configuration name="JPhotoFrameTest.displayErrorWhenInvalidPhoto" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="JPhotoFrameTest_displayErrorWhenInvalidPhoto - 2018.07.04 at 11h 00m 13s.xml">
-      <configuration name="JPhotoFrameTest.displayErrorWhenInvalidPhoto" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="JPhotoFrameTest_displayErrorWhenInvalidPhoto - 2018.07.04 at 11h 03m 32s.xml">
       <configuration name="JPhotoFrameTest.displayErrorWhenInvalidPhoto" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JPhotoFrameTest - 2018.07.04 at 11h 25m 50s.xml">
+      <configuration name="JPhotoFrameTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JPhotoFrameTest_showFasterSlideshow - 2018.07.04 at 11h 28m 19s.xml">
+      <configuration name="JPhotoFrameTest.showFasterSlideshow" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JPhotoFrameTest_showFasterSlideshow - 2018.07.04 at 11h 30m 45s.xml">
+      <configuration name="JPhotoFrameTest.showFasterSlideshow" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JPhotoFrameTest_showNormalSlideshow - 2018.07.04 at 11h 31m 32s.xml">
+      <configuration name="JPhotoFrameTest.showNormalSlideshow" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JPhotoFrameTest - 2018.07.04 at 11h 50m 32s.xml">
+      <configuration name="JPhotoFrameTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JPhotoFrameTest - 2018.07.04 at 12h 09m 09s.xml">
+      <configuration name="JPhotoFrameTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JPhotoFrameTest - 2018.07.04 at 12h 09m 28s.xml">
+      <configuration name="JPhotoFrameTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JPhotoFrameTest - 2018.07.04 at 12h 09m 59s.xml">
+      <configuration name="JPhotoFrameTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JPhotoFrameTest - 2018.07.04 at 12h 10m 55s.xml">
+      <configuration name="JPhotoFrameTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="2560" height="1413" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -444,12 +509,12 @@
       <window_info anchor="right" id="Capture Analysis" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32935026" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32935026" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" />
       <window_info anchor="right" id="Designer" order="3" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13710937" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13710937" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -506,13 +571,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fi/iki/jka/JPhotoMenu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="80" column="30" lean-forward="true" selection-start-line="80" selection-start-column="30" selection-end-line="80" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -587,14 +645,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/fi/iki/jka/JPhotoMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="57" column="25" selection-start-line="57" selection-start-column="25" selection-end-line="57" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fi/iki/jka/JPhotoCollection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="335" column="18" selection-start-line="335" selection-start-column="18" selection-end-line="335" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tests/fi/iki/jka/JPhotoFrameTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="46" selection-end-line="51" />
+        <state relative-caret-position="285">
+          <caret line="19" column="63" selection-start-line="19" selection-start-column="63" selection-end-line="19" selection-end-column="63" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#667#668#0" expanded="true" />
             <element signature="e#727#728#0" expanded="true" />
+            <element signature="e#1136#1137#0" expanded="true" />
+            <element signature="e#1199#1200#0" expanded="true" />
+            <element signature="e#1723#1724#0" expanded="true" />
+            <element signature="e#1778#1779#0" expanded="true" />
             <element signature="e#862#1011#0" expanded="true" />
             <element signature="e#1010#1011#0" expanded="true" />
             <element signature="e#1043#1044#0" expanded="true" />
@@ -605,8 +681,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/fi/iki/jka/JPhotoFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="129" column="59" lean-forward="true" selection-end-line="1084" />
+        <state relative-caret-position="365">
+          <caret line="630" column="8" lean-forward="true" selection-start-line="630" selection-start-column="8" selection-end-line="630" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -580,15 +580,10 @@ public class JPhotoFrame extends JFrame
             showExif();
         }
         else if (cmd.equals(JPhotoMenu.A_SLIDESHOW)) {
-            if (photos.getSize()>0) {
-                showSlideshow();
-            }
-            else
-
-            {
-                showSlideShowErrorMessage();
-            }
-
+            showSlideshow(photos, 5000);
+        }
+        else if (cmd.equals(JPhotoMenu.A_FAST_SLIDESHOW)) {
+            showSlideshow(photos, 200);
         }
         else if (cmd.equals(JPhotoMenu.A_HELP)) {
             displayHelp();
@@ -632,9 +627,11 @@ public class JPhotoFrame extends JFrame
                                       APP_NAME, JOptionPane.ERROR_MESSAGE);
     }
 
-    public void showSlideshow() {
-        JPhotoShow show = new JPhotoShow(photos, 5000, list);
-        show.setVisible(true);
+    public void showSlideshow(JPhotoCollection photos, int interval) {
+        if (photos.isEmpty()) showSlideShowErrorMessage();
+
+        new JPhotoShow(photos, interval, list)
+                .setVisible(true);
     }
 
     public void insertPhotos(String files[]) {

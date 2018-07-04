@@ -332,7 +332,9 @@ public class JPhotoCollection extends AbstractListModel
     public int size() {
         return photos.size();
     }
-    
+
+    public Boolean isEmpty() { return photos.isEmpty(); }
+
     // Observer method called from Observable.notifyObservers()
     // This is called from non-swing thread, must invokeLater the list notify.
     public void update(Observable o, Object arg) {

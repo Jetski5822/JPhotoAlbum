@@ -5,6 +5,7 @@ import org.junit.Test;
 
 import java.awt.event.ActionEvent;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 
@@ -16,7 +17,7 @@ public class JPhotoFrameTest {
         collection.add(0, new JPhoto());
         JPhotoFrame frame = new JPhotoFrame(null, collection) {
             @Override
-            public void showSlideshow() {
+            public void showSlideshow(JPhotoCollection photos, int interval) {
                 hasSlideshowBeenShown[0] = true;
             }
         };
@@ -24,6 +25,40 @@ public class JPhotoFrameTest {
         frame.actionPerformed(new ActionEvent("", 0, JPhotoMenu.A_SLIDESHOW));
 
         assertTrue(hasSlideshowBeenShown[0]);
+    }
+
+    @Test
+    public void showFasterSlideshow() throws Exception {
+        JPhotoCollection collection = new JPhotoCollection();
+        final int[] intervals = new int[]{0};
+        collection.add(0, new JPhoto());
+        JPhotoFrame frame = new JPhotoFrame(null, collection) {
+            @Override
+            public void showSlideshow(JPhotoCollection photos, int interval) {
+                intervals[0] = interval;
+            }
+        };
+
+        frame.actionPerformed(new ActionEvent("", 0, JPhotoMenu.A_FAST_SLIDESHOW));
+
+        assertEquals(200, intervals[0]);
+    }
+
+    @Test
+    public void showNormalSlideshow() throws Exception {
+        JPhotoCollection collection = new JPhotoCollection();
+        final int[] intervals = new int[]{0};
+        collection.add(0, new JPhoto());
+        JPhotoFrame frame = new JPhotoFrame(null, collection) {
+            @Override
+            public void showSlideshow(JPhotoCollection photos, int interval) {
+                intervals[0] = interval;
+            }
+        };
+
+        frame.actionPerformed(new ActionEvent("", 0, JPhotoMenu.A_SLIDESHOW));
+
+        assertEquals(5000, intervals[0]);
     }
 
     @Test
@@ -48,4 +83,4 @@ public class JPhotoFrameTest {
         assertTrue(errorMessageShown[0]);
     }
 
-    }
+}
